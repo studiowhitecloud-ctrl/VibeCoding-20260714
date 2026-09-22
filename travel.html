@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Planner — Vienna</title>
+    <link rel="stylesheet" href="travel.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero-banner">
+        <div class="hero-text">
+          <p class="eyebrow">Travel Planner</p>
+          <h1>Save your destinations and activities</h1>
+          <p class="hero-copy">
+            Start with Vienna and keep your favorite art, cafe, and dining places in one simple travel page.
+          </p>
+        </div>
+        <div class="hero-meta">
+          <p class="meta-title">Saved destination</p>
+          <strong>Vienna, Austria</strong>
+          <p>First stop for art galleries, cozy coffee houses, and memorable meals.</p>
+        </div>
+      </header>
+
+      <main>
+        <section class="card saved-destination">
+          <div class="card-header">
+            <h2>My Vienna plan</h2>
+            <p>Keep one city ready to explore, with top activity categories highlighted.</p>
+          </div>
+          <div class="destination-overview">
+            <div>
+              <h3>Why Vienna?</h3>
+              <p>Vienna is perfect for a creative stay: museums, historic cafes, and delicious dining are always nearby.</p>
+            </div>
+            <ul class="tag-list">
+              <li>Art</li>
+              <li>Cafe</li>
+              <li>Dining</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="card map-section">
+          <div class="card-header">
+            <h2>Vienna map</h2>
+            <p>Mark your favorite cafes, museums, and dining spots on this city map.</p>
+          </div>
+          <div class="map-container">
+            <iframe
+              src="https://maps.google.com/maps?q=Vienna,%20Austria&z=12&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <div class="map-notes">
+              <p><strong>Example places to mark:</strong></p>
+              <ul>
+                <li>Café Central or Café Sacher</li>
+                <li>MuseumsQuartier and Leopold Museum</li>
+                <li>Belvedere Palace and Albertina</li>
+                <li>Favorite dinner spots in the city center</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="card activity-section">
+          <div class="card-header">
+            <h2>Saved activities</h2>
+            <p>Choose something from the list whenever you are ready to explore.</p>
+          </div>
+          <div class="activity-grid">
+            <article class="activity-card">
+              <h3>Discover modern art</h3>
+              <p>Visit the MuseumsQuartier and Leopold Museum to see Vienna’s contemporary and classic collections.</p>
+            </article>
+            <article class="activity-card">
+              <h3>Cafe culture stroll</h3>
+              <p>Enjoy a long coffee at Café Central or Café Sacher, then walk the Ringstrasse for architecture and atmosphere.</p>
+            </article>
+            <article class="activity-card">
+              <h3>Dining scene</h3>
+              <p>Try a cozy neighborhood restaurant for schnitzel, shared plates, or a modern tasting menu.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="card wishlist-section">
+          <div class="card-header">
+            <h2>Travel list</h2>
+            <p>Track your favorite stops and upcoming experiences for Vienna.</p>
+          </div>
+          <ol class="travel-list">
+            <li>Stroll through Belvedere Palace gardens and art halls</li>
+            <li>Relax in a historic coffee house with a pastry</li>
+            <li>Dine at a small bistro with seasonal Austrian dishes</li>
+            <li>Visit the Albertina museum for art and exhibitions</li>
+          </ol>
+        </section>
+
+        <section class="card calendar-section">
+          <div class="card-header">
+            <h2>Trip calendar</h2>
+            <p>See the best Vienna days at a glance.</p>
+          </div>
+          <div class="calendar-box">
+            <div class="calendar-header">
+              <button type="button" class="calendar-nav" id="prevMonth" aria-label="Previous month">&#8592;</button>
+              <div class="calendar-title-wrap">
+                <span id="calendarMonthLabel">July</span>
+                <strong id="calendarYearLabel">2026</strong>
+              </div>
+              <button type="button" class="calendar-nav" id="nextMonth" aria-label="Next month">&#8594;</button>
+            </div>
+            <div class="calendar-grid" id="calendarGrid" aria-live="polite"></div>
+            <p class="calendar-note">Highlighted days are great for art visits, café stops, and dinner outings.</p>
+          </div>
+        </section>
+      </main>
+
+      <footer class="page-footer">
+        <p>Simple travel app demo — first destination: Vienna.</p>
+      </footer>
+    </div>
+    <script src="calendar.js"></script>
+  </body>
+</html>

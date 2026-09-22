@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kitchen Mood Picker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <a href="#picker">Meal Picker</a>
+        <a href="#quote">Quote</a>
+        <a href="#songs">Songs</a>
+      </nav>
+
+      <div class="hero-content">
+        <h1>Cook with mood, ingredients, and music</h1>
+        <p>Type the ingredients you already have and discover a tasty idea for today.</p>
+        <p class="photo-credit">Photo by <a href="https://unsplash.com/@andyc" target="_blank" rel="noopener noreferrer">Andy Chilton</a> on Unsplash</p>
+      </div>
+    </header>
+
+    <main>
+      <section id="picker" class="section card">
+        <h2>Random meal picker</h2>
+        <form id="ingredient-form">
+          <label for="ingredients">Enter ingredients (comma separated)</label>
+          <input id="ingredients" name="ingredients" type="text" placeholder="pasta, tomato, garlic" />
+          <button type="submit">Find a meal</button>
+        </form>
+
+        <div id="meal-result" class="result-box"></div>
+      </section>
+
+      <section id="quote" class="section card quote-card">
+        <h2>Quote of the day</h2>
+        <p id="quote-text"></p>
+        <span id="quote-author"></span>
+      </section>
+
+      <section id="songs" class="section card">
+        <h2>Songs to play while cooking</h2>
+        <p id="song-intro"></p>
+        <ul id="song-list"></ul>
+        <div id="song-player-grid" class="song-player-grid"></div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

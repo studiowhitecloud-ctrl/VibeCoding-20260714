@@ -1,0 +1,231 @@
+:root {
+  color-scheme: light;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --cream: #f7fbff;
+  --sage: #5f7f5a;
+  --terracotta: #c96a3d;
+  --sea: #1e5f74;
+  --sea-deep: #123b4d;
+  --sea-light: #4ea3b7;
+  --sun: #f0b66f;
+  --text: #233745;
+  --muted: #5d6f7a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.6;
+  color: var(--text);
+  background: linear-gradient(135deg, var(--cream) 0%, #dceef2 100%);
+}
+
+.hero {
+  min-height: 70vh;
+  padding: 20px 40px;
+  color: white;
+  background: linear-gradient(180deg, rgba(18, 59, 77, 0.75), rgba(30, 95, 116, 0.45)),
+    url("https://images.unsplash.com/photo-1452251889946-8ff5ea7b27ab?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.hero-content {
+  max-width: 700px;
+  margin: 90px auto 0;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 12px;
+  font-family: "Georgia", "Times New Roman", serif;
+  font-weight: 700;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 24px;
+  color: #fff5e8;
+}
+
+.section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(18, 59, 77, 0.12);
+  margin-top: 24px;
+  padding: 28px;
+  border: 1px solid #d8e9ef;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #d7c7a7;
+  border-radius: 10px;
+  font-size: 1rem;
+  background: #fffdf9;
+}
+
+button {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--terracotta), #e58d4b);
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  box-shadow: 0 6px 16px rgba(201, 106, 61, 0.2);
+}
+
+.result-box {
+  margin-top: 18px;
+  padding: 16px;
+  border-radius: 12px;
+  background: #eaf7fb;
+  border: 1px solid #b7dce7;
+}
+
+.meal-image {
+  width: 100%;
+  max-height: 360px;
+  object-fit: cover;
+  border-radius: 18px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.instructions {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid #c9e4ee;
+}
+
+.instructions ol {
+  margin: 8px 0 0 18px;
+  padding: 0;
+}
+
+.instructions li {
+  margin-bottom: 6px;
+}
+
+.quote-card {
+  background: #eef8fc;
+}
+
+#quote-text {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 8px;
+}
+
+#quote-author {
+  font-weight: 700;
+  color: var(--terracotta);
+}
+
+#song-list {
+  margin-top: 12px;
+  padding-left: 20px;
+}
+
+#song-list li {
+  margin-bottom: 6px;
+  color: var(--muted);
+}
+
+h2 {
+  color: var(--sea);
+  font-family: "Georgia", "Times New Roman", serif;
+  margin-bottom: 8px;
+}
+
+.song-player-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.song-card {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 18px;
+  padding: 16px;
+  border: 1px solid rgba(31, 72, 94, 0.12);
+}
+
+.song-card h3 {
+  margin: 0 0 10px;
+  font-size: 1rem;
+  color: var(--sea-deep);
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  overflow: hidden;
+  border-radius: 14px;
+  background: #000;
+}
+
+.song-card .play-link {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 14px;
+  background: linear-gradient(135deg, var(--terracotta), #e58d4b);
+  color: white;
+  text-decoration: none;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.song-card .play-link:hover {
+  opacity: 0.95;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.photo-credit {
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.95rem;
+}
+
+.photo-credit a {
+  color: #f3d8b5;
+  text-decoration: underline;
+}
